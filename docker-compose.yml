@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ncrtask:
+    image: ${DOCKER_REGISTRY-}ncrtask
+    build:
+      context: .
+      dockerfile: NCRTask/Dockerfile
